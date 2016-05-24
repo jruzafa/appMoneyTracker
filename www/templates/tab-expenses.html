@@ -1,0 +1,16 @@
+<ion-view view-title="Expenses"  hide-nav-bar="true">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-icon-right" ng-repeat="reg in registy" type="item-text-wrap">
+        <div class="row responsive-sm">
+          <div class="col col-10">
+            <p class="amount">{{reg.amount}} €</p>
+          </div>
+          <div class="col col-10">
+            <h2 class="">{{reg.concept}}</h2>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

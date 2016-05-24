@@ -1,0 +1,26 @@
+<ion-view view-title="Home" ng-controller="DashCtrl" hide-nav-bar="true">
+  <ion-content class="padding">
+    <div class="item item-divider">New balance</div>
+    <div class="item item-divider">  <h3>Current Balance  {{ current_balance }} €</h3></div>
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="New Balance" ng-model="$scope.balance" />
+      </label>
+      <button class="button button-full button-assertive" ng-click="setBalance($scope.balance)">Set</button>
+    </div>
+    <div class="item item-divider">New registry</div>
+    <div class="list ">
+      <label class="item item-input">
+        <input type="text" placeholder="Concept" ng-model="$scope.concept" />
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Amount" ng-model="$scope.amount" />
+      </label>
+      <button class="button button-full button-balanced activated" ng-click="save($scope.concept, $scope.amount)">
+        <i class="icon ion-plus-circled"></i> New registry
+      </button>
+      <div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
